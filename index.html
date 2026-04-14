@@ -15,17 +15,12 @@
     <main class="container">
         <article class="profile-card" data-testid="test-profile-card">
             <figure class="profile-avatar-container">
-                <img src="avatar.png" alt="Profile photo of Odogwu Developer" data-testid="test-user-avatar" id="userAvatar">
-                <div class="avatar-overlay">
-                    <button id="triggerUpload" aria-label="Change Profile Photo">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                    </button>
-                </div>
+                <img src="Profile.png" alt="Profile photo of Odogwu Developer" data-testid="test-user-avatar" id="userAvatar">
             </figure>
 
             <header class="profile-header">
                 <h2 data-testid="test-user-name" id="userName">Odogwu Developer</h2>
-                <p data-testid="test-user-bio" class="bio">Passionate Full-Stack Engineer and UI Architect. Building accessible web experiences with modern patterns and a touch of antigravity logic.</p>
+                <p data-testid="test-user-bio" class="bio">Software Engineer specializing in scalable web applications and intuitive user interfaces. Committed to writing clean, maintainable code and delivering high-performance digital experiences that prioritize accessibility and user satisfaction.</p>
             </header>
 
             <div class="profile-stats">
@@ -37,8 +32,8 @@
 
             <nav class="social-nav" aria-label="Social media links">
                 <ul data-testid="test-user-social-links" class="social-links">
-                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" aria-label="Twitter Profile">Twitter</a></li>
-                    <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github" aria-label="GitHub Profile">GitHub</a></li>
+                    <li><a href="https://x.com/Wisdom4708512" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" aria-label="Twitter Profile">Twitter</a></li>
+                    <li><a href="https://github.com/WISDOMIRVING" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github" aria-label="GitHub Profile">GitHub</a></li>
                     <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin" aria-label="LinkedIn Profile">LinkedIn</a></li>
                 </ul>
             </nav>
@@ -62,19 +57,6 @@
             </section>
         </article>
 
-        <!-- Dynamic Controls (Hidden by default or separate section) -->
-        <aside class="avatar-controls" aria-label="Avatar controls">
-            <h2>Update Avatar</h2>
-            <div class="control-group">
-                <label for="avatarUrl">Image URL</label>
-                <input type="text" id="avatarUrl" placeholder="https://example.com/photo.jpg">
-            </div>
-            <div class="control-group">
-                <label for="avatarFile">Upload Image</label>
-                <input type="file" id="avatarFile" accept="image/*">
-            </div>
-            <button id="applyUrl">Apply URL</button>
-        </aside>
     </main>
 
     <script src="script.js"></script>

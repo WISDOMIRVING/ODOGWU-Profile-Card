@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Handle image load error
             avatarImg.onerror = () => {
                 alert('Failed to load image from URL. Please check the link.');
-                avatarImg.src = 'avatar.png'; // Fallback
+                avatarImg.src = 'Profile.png'; // Fallback
             };
         }
     });
