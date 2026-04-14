@@ -92,7 +92,7 @@ ODOGWU-Profile-Card/
 ├── style.css       # Premium responsive styles
 ├── script.js       # Dynamic time & avatar logic
 ├── tests.js        # Automated acceptance tests
-├── avatar.png      # Default profile avatar
+├── Profile.png     # Profile avatar image
 └── README.md       # Documentation
 ```
 
