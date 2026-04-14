@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Profile Card | ODOGWU</title>
+    <meta name="description" content="A highly accessible, responsive, and modern profile card component built with semantic HTML and vanilla CSS.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Inter and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <article class="profile-card" data-testid="test-profile-card">
+            <figure class="profile-avatar-container">
+                <img src="avatar.png" alt="Profile photo of Odogwu Developer" data-testid="test-user-avatar" id="userAvatar">
+                <div class="avatar-overlay">
+                    <button id="triggerUpload" aria-label="Change Profile Photo">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    </button>
+                </div>
+            </figure>
+
+            <header class="profile-header">
+                <h2 data-testid="test-user-name" id="userName">Odogwu Developer</h2>
+                <p data-testid="test-user-bio" class="bio">Passionate Full-Stack Engineer and UI Architect. Building accessible web experiences with modern patterns and a touch of antigravity logic.</p>
+            </header>
+
+            <div class="profile-stats">
+                <div class="time-container">
+                    <span class="label">Current Time (ms)</span>
+                    <span data-testid="test-user-time" id="userTime" aria-live="polite">0</span>
+                </div>
+            </div>
+
+            <nav class="social-nav" aria-label="Social media links">
+                <ul data-testid="test-user-social-links" class="social-links">
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" aria-label="Twitter Profile">Twitter</a></li>
+                    <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github" aria-label="GitHub Profile">GitHub</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin" aria-label="LinkedIn Profile">LinkedIn</a></li>
+                </ul>
+            </nav>
+
+            <section class="hobbies-section">
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies" class="list-container">
+                    <li>Open Source Contributing</li>
+                    <li>UI Design & Micro-interactions</li>
+                    <li>Playing Chess</li>
+                </ul>
+            </section>
+
+            <section class="dislikes-section">
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes" class="list-container">
+                    <li>Poor Accessibility</li>
+                    <li>Unoptimized Assets</li>
+                    <li>Inconsistent Indentation</li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- Dynamic Controls (Hidden by default or separate section) -->
+        <aside class="avatar-controls" aria-label="Avatar controls">
+            <h2>Update Avatar</h2>
+            <div class="control-group">
+                <label for="avatarUrl">Image URL</label>
+                <input type="text" id="avatarUrl" placeholder="https://example.com/photo.jpg">
+            </div>
+            <div class="control-group">
+                <label for="avatarFile">Upload Image</label>
+                <input type="file" id="avatarFile" accept="image/*">
+            </div>
+            <button id="applyUrl">Apply URL</button>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
